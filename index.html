@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sorting Visualizer</h1>
+    <div id = "container"></div>
+
+    <hr>
+
+    <div class="select">
+        <button onClick="init()">Generate a random array</button>
+        <button onClick="playbubble()">Bubble Sort</button>
+        <!-- <button onClick="init()">Merge Sort</button> -->
+        <button onClick="playSelection()">Selection Sort</button>
+        <!-- <button onClick="playbubble()">Heap Sort</button> -->
+    </div>
+    <div class="control">
+        <label for="slider">Number of Elements: </label>
+        <input type="range" id="slider" min="2" max="100" value="10">
+        <span id="sliderValue">10</span>
+        <br>
+        <br>
+        <label for="speedValue">Reduce the speed</label>
+        <input type="range" id="speedSlider" min="1" max="1000" value="100">
+        <span id="speedValue">100</span> ms
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
